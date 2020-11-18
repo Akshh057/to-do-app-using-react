@@ -11,11 +11,16 @@ function ToDolist() {
     }
     const displayList = () =>
     {
+        if(listItem==="")
+        alert("enter some task");
+        else
+        {
          addArrayListItem((oldItems) =>
          {
              return[...oldItems,listItem];
          })
          updateList("");
+        }
     }
     const deleteItems = (id) =>
     {
